@@ -1,7 +1,7 @@
 <h1><%= link_to @artist.name, artist_songs_path(@artist) %></h1>
 
 <% if flash[:alert] %>
-  <%= content_tag :div, flash[:alert], class: flash_alert %>
+  <%= content_tag :div, flash[:alert], class: "flash-alert" %>
 <% end %>
 
 <ul>
