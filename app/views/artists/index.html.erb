@@ -1,4 +1,7 @@
 <h1>Artists</h1>
+<% if flash[:message] %>
+  <%= content_tag :div, flash[:message], class: flash-message %>
+<% end %>
 <ul>
   <% @artists.each do |artist| %>
     <li><%= link_to artist.name, artist_path(artist) %></li>
