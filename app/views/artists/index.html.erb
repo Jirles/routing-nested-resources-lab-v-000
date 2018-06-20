@@ -1,6 +1,6 @@
 <h1>Artists</h1>
-<% if flash[:message] %>
-  <%= content_tag :div, flash[:message], class: flash-message %>
+<% if flash[:notice] %>
+  <%= content_tag :div, flash[:notice], class: flash-notice %>
 <% end %>
 <ul>
   <% @artists.each do |artist| %>
