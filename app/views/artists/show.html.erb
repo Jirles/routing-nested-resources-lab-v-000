@@ -4,3 +4,7 @@
     <li><%= link_to song.title, artist_song_path(@artist, song) %></li>
   <% end %>
 </ul>
+
+<% if flash[:alert] %>
+  <%= content_tag :div, flash[:alert], class: flash-alert %>
+<% end %>
